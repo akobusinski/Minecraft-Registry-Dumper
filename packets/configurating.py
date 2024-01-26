@@ -41,7 +41,7 @@ class Packet:
     def deserialize(cls, buf: Buffer, /) -> Self:
         return cls()
 
-class PacketDict(dict[Any, Any]): # Dict that doesn't care whether or not something doesn't exist
+class PacketDict(dict[Any, Any]): # Dict that doesn't care whether or not something exists
     def __init__(self, default: Dict[Any, Any]):
         self.default = default
     
